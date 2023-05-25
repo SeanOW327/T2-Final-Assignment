@@ -1,7 +1,204 @@
 /*font-family: 'Montserrat', sans-serif; */
 /* font-family: 'Pacifico', cursive; */
 
-.nav-container{
-    margin-top: 100px;
+body{
+    background-color: #111518;
 }
 
+
+
+
+
+/* Navbar */
+
+.navbar{
+    font-family: 'Montserrat', sans-serif;
+    padding-left: 60px;
+    padding-right: 60px;
+}
+
+.current{
+    font-weight: 700;
+}
+
+.nav-search{
+    border-radius: 50px;
+    border: 2px solid #F7B12E;
+    min-width: 240px;
+}
+
+.nav-search-button{
+    background-color: #F7B12E;
+    color: #111518;
+    border-color: transparent;
+}
+
+.nav-search-button:hover{
+    background-color: #111518;
+    border-color: transparent;
+}
+
+
+/* Hero Section */
+
+.hero-section .col-7{
+    padding: 0;
+}
+
+.hero-section .col-5{
+    padding: 0;
+}
+
+.hero-section{
+    height: 90vh;
+    background-color: #111518;
+    color: white;
+    border-bottom: 5px solid #FFFFFF20 ;
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+    overflow: hidden;
+}
+
+.hero-bg{
+    background-image: url("../assets/bg.jpg");
+    background-position: center;
+    background-size: cover;
+    height: 100%;
+    padding-top: 30%;
+    padding-left: 60px;
+}
+
+.cursive{
+    font-family: 'Pacifico', cursive;
+    color: #F7B12E;
+}
+
+.hero-text{
+    width: 500px;
+    font-size: 50px;
+    font-weight: 700;
+}
+
+.hero-image{
+    background-image: url("../assets/hero\ image.jpg");
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+}
+
+
+/* About Us */
+
+.about-us{
+    padding-top: 90px;
+    color: white;
+    
+    text-align: center;
+    
+}
+
+.heading-1{
+    font-size: 40px;
+    font-weight: 700;
+}
+
+.subheading{
+    font-size: 20px;
+    color: #FFFFFF80;
+}
+
+.about-text{
+    width: 700px;
+    margin: 0 auto;
+    margin-top: 30px;
+    margin-bottom: 60px;
+}
+
+.global-con{
+    max-width: 1320px;
+    margin: 0 auto;
+}
+
+.sub-step-con{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    color: white;
+
+}
+
+.step-heading{
+    margin-top: 10px;
+    margin-bottom: 20px;
+    font-size: 25px;
+    font-weight: 700;
+}
+
+.step-paragraph{
+    max-width: 397px;
+    font-size: 18px;
+}
+
+.easy-steps{
+    margin-bottom: 90px;
+}
+
+
+/* Subs of the month */
+
+.sotm-section{
+    background-color: white;
+    padding-top: 60px;
+}
+
+.sotm-heading{
+    text-align: center;
+    font-weight: 700;
+    padding-bottom: 40px;
+}
+
+.sub-card{
+    width: 100%;
+    border: 2px solid #00000050;
+    border-radius: 10px;
+    margin-bottom: 50px;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+
+}
+
+.sub-name{
+    font-family: 'Pacifico', cursive;
+    font-size: 25px;
+    margin-top: 10px;
+}
+
+.sub-details{
+    width: 380px;
+    font-size: 18px;
+}
+
+.price{
+    margin-top: 10px;
+    
+    font-size: 25px;
+    font-weight: 700;
+    color: #F7B12E;
+}
+
+.buy-button{
+    border: 2px solid #F7B12E;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 8px;
+    padding-top: 8px;
+    font-weight: 700;
+
+}

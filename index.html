@@ -18,14 +18,20 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
+    <!-- Internal CSS -->
+    <link rel="stylesheet" href="css/main.css">
+
     <title>Hello, world!</title>
   </head>
 
   <body>
     
-    <nav class="navbar navbar-expand-lg navbar-light bg-light nav-container">
-      <div class="container">
-        <a class="navbar-brand" href="#">Navbar</a>
+    <!--Navigation Bar-->
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-white">
+      <a class="navbar-brand" href="#">
+        <img src="assets/Logo.svg">
+      </a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -33,33 +39,168 @@
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mr-auto">
           <li class="nav-item active">
-            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+            <a class="nav-link current" href="#">Home <span class="sr-only">(current)</span></a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Link</a>
-          </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              Dropdown
-            </a>
-            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <a class="dropdown-item" href="#">Action</a>
-              <a class="dropdown-item" href="#">Another action</a>
-              <div class="dropdown-divider"></div>
-              <a class="dropdown-item" href="#">Something else here</a>
-            </div>
+            <a class="nav-link" href="#">About Us</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link disabled" href="#">Disabled</a>
+            <a class="nav-link" href="#">Subs of The Month</a>
           </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Build a Sub</a>
+          </li>
+          
         </ul>
         <form class="form-inline my-2 my-lg-0">
-          <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+          <input class="form-control mr-sm-2 nav-search" type="search" placeholder="Have something in mind?" aria-label="Search">
+          <button class="btn btn-outline-success my-2 my-sm-0 nav-search-button" type="submit">Search</button>
         </form>
       </div>
-      </div>
     </nav>
+
+
+    <!--Hero Section-->
+
+    <div class="container-fluid">
+      <div class="row hero-section">
+        <div class="col-5 z-index">
+          <div class="hero-bg">
+            <h1 class="hero-text" >Fresh and <span class="cursive">Delicious</span>  Sub Sandwiches Made Just for You!</h1>
+            
+          </div>
+        </div>
+        <div class="col-7">
+          <div class="hero-image"></div>
+        </div>
+      </div>
+    </div>
+
+
+    <!--About Us-->
+    <div class="global-con">
+      <div class="container-fluid">
+        <div class="row about-us">
+          <div class="col-12 about-heading">
+            <h2 class="heading-1">Create Your <span class="cursive"> Dream Sub </span> </h2>
+            <h3 class="subheading">In 3 easy steps!</h3>
+            <p class="about-text"> Welcome to Super Subs, the online sandwich shop where you can create your own perfect sub! Our website allows you to customize your sub with the same ease and convenience as you would at a physical SuperSub location.</p>
+          </div>
+          
+        </div>
+        <div class="row easy-steps">
+          <div class="col-4">
+            <div class="sub-step-con">
+              <img src="/assets/icon 1.svg" height="92px">
+              <h3 class="step-heading">1. Select your Bread</h3>
+              <p class="step-paragraph"> Choose from a variety of fresh, delicious breads, including white, wheat, and Italian. We also offer gluten-free options.</p>
+            </div>
+          </div>
+          <div class="col-4">
+            <div class="sub-step-con">
+              <img src="/assets/icon 2.svg" height="92px">
+              <h3 class="step-heading">2. Choose Your Fillings</h3>
+              <p class="step-paragraph"> Load up your sub with your favorite meats, cheeses, veggies, and toppings. We have something for everyone!</p>
+            </div>
+          </div>
+          <div class="col-4">
+            <div class="sub-step-con">
+              <img src="/assets/icon 3.svg" height="92px">
+              <h3 class="step-heading">3. Add Your Sauce</h3>
+              <p class="step-paragraph">  Choose from a variety of fresh, delicious breads, including white, wheat, and Italian. We also offer gluten-free and low-carb options.</p>
+            </div>
+          </div>
+        </div>
+        
+      </div>
+    </div>
+    
+
+    <!--Subs Of The Month-->
+    <div class="sotm-section">
+      <div class="global-con">
+        <div class="container-fluid ">
+            <h2 class="sotm-heading"><span class="cursive">Subs</span>  Of The Month</h2>
+            <div class="row">
+              <div class="col-4">
+                <div class="sub-card">
+                  <img src="/assets/farmhouse - img.jpg" width="295">
+                  <h4 class="sub-name">The Farmhouse</h4>
+                  <p class="sub-details">Whole wheat bread with turkey, cheddar cheese, bacon, tomato, onion, and ranch dressing.</p>
+                  <p class="price">R89</p>
+                  <div class="buy-button">Buy Sub</div>
+                </div>
+              </div>
+              <div class="col-4">
+                <div class="sub-card">
+                  <img src="/assets/farmhouse - img.jpg" width="295">
+                  <h4 class="sub-name">The Farmhouse</h4>
+                  <p class="sub-details">Whole wheat bread with turkey, cheddar cheese, bacon, tomato, onion, and ranch dressing.</p>
+                  <p class="price">R89</p>
+                  <div class="buy-button">Buy Sub</div>
+                </div>
+              </div>
+              <div class="col-4">
+                <div class="sub-card">
+                  <img src="/assets/farmhouse - img.jpg" width="295">
+                  <h4 class="sub-name">The Farmhouse</h4>
+                  <p class="sub-details">Whole wheat bread with turkey, cheddar cheese, bacon, tomato, onion, and ranch dressing.</p>
+                  <p class="price">R89</p>
+                  <div class="buy-button">Buy Sub</div>
+                </div>
+              </div>
+              <div class="col-4">
+                <div class="sub-card">
+                  <img src="/assets/farmhouse - img.jpg" width="295">
+                  <h4 class="sub-name">The Farmhouse</h4>
+                  <p class="sub-details">Whole wheat bread with turkey, cheddar cheese, bacon, tomato, onion, and ranch dressing.</p>
+                  <p class="price">R89</p>
+                  <div class="buy-button">Buy Sub</div>
+                </div>
+              </div>
+              <div class="col-4">
+                <div class="sub-card">
+                  <img src="/assets/farmhouse - img.jpg" width="295">
+                  <h4 class="sub-name">The Farmhouse</h4>
+                  <p class="sub-details">Whole wheat bread with turkey, cheddar cheese, bacon, tomato, onion, and ranch dressing.</p>
+                  <p class="price">R89</p>
+                  <div class="buy-button">Buy Sub</div>
+                </div>
+              </div>
+              <div class="col-4">
+                <div class="sub-card">
+                  <img src="/assets/farmhouse - img.jpg" width="295">
+                  <h4 class="sub-name">The Farmhouse</h4>
+                  <p class="sub-details">Whole wheat bread with turkey, cheddar cheese, bacon, tomato, onion, and ranch dressing.</p>
+                  <p class="price">R89</p>
+                  <div class="buy-button">Buy Sub</div>
+                </div>
+              </div>
+              <div class="col-4">
+                <div class="sub-card">
+                  <img src="/assets/farmhouse - img.jpg" width="295">
+                  <h4 class="sub-name">The Farmhouse</h4>
+                  <p class="sub-details">Whole wheat bread with turkey, cheddar cheese, bacon, tomato, onion, and ranch dressing.</p>
+                  <p class="price">R89</p>
+                  <div class="buy-button">Buy Sub</div>
+                </div>
+              </div>
+              <div class="col-4">
+                <div class="sub-card">
+                  <img src="/assets/farmhouse - img.jpg" width="295">
+                  <h4 class="sub-name">The Farmhouse</h4>
+                  <p class="sub-details">Whole wheat bread with turkey, cheddar cheese, bacon, tomato, onion, and ranch dressing.</p>
+                  <p class="price">R89</p>
+                  <div class="buy-button">Buy Sub</div>
+                </div>
+              </div>
+            </div>
+            </div>
+        </div>
+      </div>
+    </div>
+    
+    
 
     
   </body>
