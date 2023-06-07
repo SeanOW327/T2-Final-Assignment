@@ -1,7 +1,7 @@
 /*font-family: 'Montserrat', sans-serif; */
 /* font-family: 'Pacifico', cursive; */
 
-body{
+.dark-bg{
     background-color: #111518;
 }
 
@@ -10,6 +10,11 @@ body{
 
 
 /* Navbar */
+
+.nav-bg{
+    background-color: white;
+    width: 100%;
+}
 
 .navbar{
     font-family: 'Montserrat', sans-serif;
@@ -40,6 +45,28 @@ body{
 
 
 /* Hero Section */
+
+.btn-primary{
+    background-color: #F7B12E;
+    border: none;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    color: #111518;
+    font-weight: 700;
+    padding-left: 20px;
+    padding-right: 20px;
+    transition: ease-in;
+    transition-duration: 200ms;
+}
+
+.btn-primary:hover{
+    background-color: white;
+    color: #111518;
+    transition: ease-in;
+    transition-duration: 200ms;
+}
 
 .hero-section .col-7{
     padding: 0;
@@ -77,6 +104,7 @@ body{
     width: 500px;
     font-size: 50px;
     font-weight: 700;
+    margin-bottom: 40px;
 }
 
 .hero-image{
@@ -197,8 +225,60 @@ body{
     border-top-right-radius: 15px;
     padding-left: 20px;
     padding-right: 20px;
-    padding-bottom: 8px;
-    padding-top: 8px;
+    padding-bottom: 5px;
+    padding-top: 5px;
     font-weight: 700;
-
+    transition: ease-in;
+    transition-duration: 200ms;
 }
+
+.buy-button:hover{
+    background-color: #F7B12E;
+    transition: ease-in;
+    transition-duration: 200ms;
+    cursor: pointer;
+}
+
+
+/* Footer */
+
+.footer{
+    padding: 30px;
+    background-color: #111518;
+    color: white;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footer p{
+    margin: 0;
+}
+
+.socials{
+    display: flex;
+}
+
+.social-link{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-position: center;
+    background-size: cover;
+    transition: ease-out;
+    transition-duration: 0.2s;
+    margin-left: 30px;
+}
+
+.social-link:hover{
+    background-color: #F7B12E;
+    transition: ease-out;
+    transition-duration: 0.2s;
+    cursor: pointer;
+}
+
+.youtube{background-image: url("../assets/youtube.svg");}
+.facebook{background-image: url("../assets/facebook.svg");}
+.twitter{background-image: url("../assets/twitter.svg");}
+.instagram{background-image: url("../assets/instagram.svg");}

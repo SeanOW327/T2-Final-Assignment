@@ -21,43 +21,44 @@
     <!-- Internal CSS -->
     <link rel="stylesheet" href="css/main.css">
 
-    <title>Hello, world!</title>
+    <title>SuperSubs Homepage</title>
   </head>
 
-  <body>
+  <body class="dark-bg">
     
     <!--Navigation Bar-->
-
-    <nav class="navbar navbar-expand-lg navbar-light bg-white">
-      <a class="navbar-brand" href="#">
-        <img src="assets/Logo.svg">
-      </a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
+    <div class="nav-bg">
+      <nav class="navbar navbar-expand-lg navbar-light bg-white global-con">
+      
+        <a class="navbar-brand" href="index.html">
+          <img src="assets/Logo.svg">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            
+            <li class="nav-item">
+              <a class="nav-link" href="http://127.0.0.1:5501/index.html#about-us-section">About Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="http://127.0.0.1:5501/index.html#subs-section">Subs of The Month</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/pages/BuildASub.html">Build a Sub</a>
+            </li>
+            
+          </ul>
+          <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2 nav-search" type="search" placeholder="Have something in mind?" aria-label="Search">
+            <button class="btn btn-outline-success my-2 my-sm-0 nav-search-button" type="submit">Search</button>
+          </form>
+        </div>
+      </nav>
+    </div>
     
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav mr-auto">
-          <li class="nav-item active">
-            <a class="nav-link current" href="#">Home <span class="sr-only">(current)</span></a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">About Us</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Subs of The Month</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Build a Sub</a>
-          </li>
-          
-        </ul>
-        <form class="form-inline my-2 my-lg-0">
-          <input class="form-control mr-sm-2 nav-search" type="search" placeholder="Have something in mind?" aria-label="Search">
-          <button class="btn btn-outline-success my-2 my-sm-0 nav-search-button" type="submit">Search</button>
-        </form>
-      </div>
-    </nav>
 
 
     <!--Hero Section-->
@@ -67,7 +68,7 @@
         <div class="col-5 z-index">
           <div class="hero-bg">
             <h1 class="hero-text" >Fresh and <span class="cursive">Delicious</span>  Sub Sandwiches Made Just for You!</h1>
-            
+            <button type="button" class="btn btn-primary">Build Your Own Sub</button>
           </div>
         </div>
         <div class="col-7">
@@ -78,7 +79,7 @@
 
 
     <!--About Us-->
-    <div class="global-con">
+    <div class="global-con" id="about-us-section">
       <div class="container-fluid">
         <div class="row about-us">
           <div class="col-12 about-heading">
@@ -117,7 +118,8 @@
     
 
     <!--Subs Of The Month-->
-    <div class="sotm-section">
+
+    <div class="sotm-section" id="subs-section">
       <div class="global-con">
         <div class="container-fluid ">
             <h2 class="sotm-heading"><span class="cursive">Subs</span>  Of The Month</h2>
@@ -199,8 +201,25 @@
         </div>
       </div>
     </div>
+
+
+    <!--Footer-->
     
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-12 footer global-con">
+              <img src="assets/Logo white.svg">
+              <p>©SuperSubs 2023</p>
+              <div class="socials">
+                <a href="https://www.facebook.com"> <div class="social-link facebook"></div> </a>
+                <a href="https://www.twitter.com"> <div class="social-link twitter"></div> </a>
+                <a href="https://www.instagram.com"> <div class="social-link instagram"></div> </a>
+              </div>
+            </div>
+        </div>
+    </div>
     
+  
 
     
   </body>

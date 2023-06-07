@@ -1,0 +1,148 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+     <!--Bootstrap script-->
+     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+ 
+     <!--Fonts-->
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Pacifico&display=swap" rel="stylesheet">
+ 
+     <!-- Bootstrap CSS -->
+     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+ 
+     <!-- Internal CSS -->
+     <link rel="stylesheet" href="/css/main.css">
+     <link rel="stylesheet" href="/css/build-sub.css">
+
+     <script src="/js/data.js"></script>
+    <script src="/js/BuildASub.js"></script>
+    
+    <title>SuperSubs: Build A Sub</title>
+  </head>
+  <body class="dark-bg" onload="addToppingOptions(), addSauceOptions(), addDrinkOptions()">
+
+    <!--Navigation Bar-->
+    
+    <div class="nav-bg">
+        <nav class="navbar navbar-expand-lg navbar-light bg-white global-con">
+        
+          <a class="navbar-brand" href="/index.html">
+            <img src="/assets/Logo.svg">
+          </a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+              
+              <li class="nav-item">
+                <a class="nav-link" href="http://127.0.0.1:5501/index.html#about-us-section">About Us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="http://127.0.0.1:5501/index.html#subs-section">Subs of The Month</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link current" href="/pages/BuildASub.html">Build a Sub</a>
+              </li>
+              
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+              <input class="form-control mr-sm-2 nav-search" type="search" placeholder="Have something in mind?" aria-label="Search">
+              <button class="btn btn-outline-success my-2 my-sm-0 nav-search-button" type="submit">Search</button>
+            </form>
+          </div>
+        </nav>
+    </div>
+      
+
+    <!--Heading-->
+
+    
+
+    <div class="container-fluid hero-con">
+        <div class="row hero-section">
+          <div class="col-12 z-index">
+            <div class="mini-hero">
+              <h1 class="hero-text" >Create a <span class="cursive">Delicious</span>  Sub Sandwich</h1>
+              
+            </div>
+          </div>
+         
+        </div>
+    </div>
+
+
+    <!--Build Sub-->
+    <div class="current-cost"></div>
+    <div class="form-wrap">
+      <div class="order-total-wrapper ">
+        <div class="global-con order-total">
+          <p><strong>Order Total:</strong> R0.00</p>
+          <button type="button" class="btn btn-secondary" id="addToCart">Add to Cart</button>  
+        </div>
+        
+      </div>
+      <div class="global-con">
+        
+        
+        <div class="container-fluid">
+            <div class="row form-element">
+                <h2 class="heading-1"> Name Your Sub</h2>
+                <input type="text" class="form-control" placeholder="Name Your Sub" id="subName">
+               
+            </div>
+
+            <div class="row form-element">
+                <h2 class="heading-1"> Choose A Bread</h2>
+                <select class="form-control" id="breadType">
+                    <option>Select bread</option>
+                    <option>Italian bread</option>
+                    <option>whole wheat bread</option>
+                    <option>honey oat bread</option>
+                    <option>Jalepeno cheese bread</option>
+                    <option>Gluten free bread</option>
+                </select>
+            </div>
+
+            <div class="row form-element">
+              <h2 class="heading-1">Topping Options</h2>
+              <p class="subheading">Please select a <strong>minimum</strong> of 5 toppings</p>
+              
+              <div class="toppings" id="toppingArea">
+                
+              </div>
+            </div>
+
+            <div class="row form-element">
+              <h2 class="heading-1">Add a sauce</h2>
+              <p class="subheading">Please choose a <strong>minimum</strong> of 1 sauce</p>
+              <div class="toppings" id="sauceArea">
+                
+                </div>
+            </div>
+
+            <div class="row form-element">
+              <h2 class="heading-1">Pick a drink</h2>
+              <p class="subheading">Choose the beverage of your choice!</p>
+              <div class="toppings" id="drinkArea">
+                
+              </div>
+            </div>
+
+        </div>
+    </div>
+    </div>
+   
+    
+
+  </body>
+</html>

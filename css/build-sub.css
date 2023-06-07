@@ -1,0 +1,149 @@
+body{
+    color: white;
+}
+
+/* Hero Section */
+
+.hero-con{
+    margin-bottom: 60px;
+}
+
+.hero-section{
+    height: 30vh;
+}
+
+.mini-hero{
+    background-image: url("../assets/bg.jpg");
+    background-position: center;
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    padding-top: 30px;
+    justify-content: center;
+    
+}
+
+
+/* Form */
+
+.row{
+    margin: 0;
+    
+}
+
+.heading-1{
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.container-fluid{
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.col-12{
+    padding: 0;
+}
+
+.hero-text{
+    width: auto;
+}
+
+#breadType{
+    width: 500px;
+}
+
+.select-outline:focus{
+    outline-color: blueviolet;
+}
+
+#subName{
+    width: 500px;
+}
+
+.form-element{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 40px;
+}
+
+.sauce-selection{
+    display: flex;
+    margin-left: 20px;
+    
+}
+
+.base-check{
+    margin-right: 60px;
+}
+
+.base-checked{
+    margin-right: 60px;
+}
+
+.toppings{
+    margin-left: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    width: 700px;
+}
+
+.top-check{
+    margin-right: 40px;
+    width: 100px;
+    margin-bottom: 5px;
+}
+
+.global-con{
+    max-width: 1140px;
+}
+
+.subheading{
+    color: #ffffff80;
+    margin-top: -20px;
+    font-size: 16px;
+}
+
+.form-wrap{
+    padding-bottom: 100px;
+}
+
+.order-total-wrapper{
+    width: 100%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: #F7B12E;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    z-index: 1;
+    
+}
+
+.order-total{
+    text-align: center;
+    color: #111518;
+    font-size: 20px;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+}
+
+.order-total p{
+    margin: 0;
+}
+
+.btn-secondary{
+    background-color: white;
+    color: #111518;
+    font-weight: 700;
+    display: inline-block;
+}
+
+#addToCart{
+    margin-left: 30px;
+}
+
