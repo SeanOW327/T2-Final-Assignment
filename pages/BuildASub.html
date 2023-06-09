@@ -86,15 +86,15 @@
     <div class="form-wrap">
       <div class="order-total-wrapper ">
         <div class="global-con order-total">
-          <p><strong>Order Total:</strong> R0.00</p>
-          <button type="button" class="btn btn-secondary" id="addToCart">Add to Cart</button>  
+          <p id="subTotal"><strong>Sub Total:</strong> R0.00</p>
+          <button type="button" class="btn btn-secondary" id="addToCart"  >Proceed to Checkout</button>  
         </div>
         
       </div>
       <div class="global-con">
         
         
-        <div class="container-fluid">
+        <form id="subForm" class="container-fluid" onchange="currentOrderCost()">
             <div class="row form-element">
                 <h2 class="heading-1"> Name Your Sub</h2>
                 <input type="text" class="form-control" placeholder="Name Your Sub" id="subName">
@@ -103,13 +103,13 @@
 
             <div class="row form-element">
                 <h2 class="heading-1"> Choose A Bread</h2>
-                <select class="form-control" id="breadType">
+                <select class="form-control" id="bread">
                     <option>Select bread</option>
-                    <option>Italian bread</option>
-                    <option>whole wheat bread</option>
-                    <option>honey oat bread</option>
-                    <option>Jalepeno cheese bread</option>
-                    <option>Gluten free bread</option>
+                    <option>Italian bread - R20.00</option>
+                    <option>whole wheat bread - R25.00</option>
+                    <option>honey oat bread - R30.00</option>
+                    <option>Jalepeno cheese bread - R35.00</option>
+                    <option>Gluten free bread - R40.00</option>
                 </select>
             </div>
 
@@ -138,11 +138,30 @@
               </div>
             </div>
 
-        </div>
-    </div>
-    </div>
-   
+        </form>
+
+
+    <!--Display Subs-->
+
     
+    <div class="subtotal-heading">
+      <p id="currentOrderCost"><strong>Order Total:</strong>  R0.00</p>
+      <button type="button" class="btn btn-secondary" id="addToCart" onclick="makeSub(), displayOrder()" >Add Sub</button>
+    </div>
+
+    <div class="line"></div>
+
+    <h2 >Your Orders</h2>
+
+    <div class="container-fluid orders-wrapper">
+      <div class="row" id="orders">
+        
+        
+      </div>
+    </div>
+
+    </div>
+    </div>
 
   </body>
 </html>

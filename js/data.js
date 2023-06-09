@@ -129,3 +129,12 @@ let drinkOptions = [
     },
 ]
 
+let subsOfTheMonth = [
+    {
+        subLabel: "The Farmhouse",
+        subBread: "Whole wheat bread",
+        subTopping: ["cheddar cheese", "bacon", "tomato", "onion"],
+        subSauce: "ranch",
+        subPrice: 80
+    },
+]
