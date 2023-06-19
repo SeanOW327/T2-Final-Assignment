@@ -21,10 +21,14 @@
     <!-- Internal CSS -->
     <link rel="stylesheet" href="css/main.css">
 
+    <script src="/js/data.js"></script>
+    <script src="/js/BuildASub.js"></script>
+    <script src="js/index.js"></script>
+
     <title>SuperSubs Homepage</title>
   </head>
 
-  <body class="dark-bg">
+  <body class="dark-bg" onload="addSubs()">
     
     <!--Navigation Bar-->
     <div class="nav-bg">
@@ -123,79 +127,8 @@
       <div class="global-con">
         <div class="container-fluid ">
             <h2 class="sotm-heading"><span class="cursive">Subs</span>  Of The Month</h2>
-            <div class="row">
-              <div class="col-4">
-                <div class="sub-card">
-                  <img src="/assets/farmhouse - img.jpg" width="295">
-                  <h4 class="sub-name">The Farmhouse</h4>
-                  <p class="sub-details">Whole wheat bread with turkey, cheddar cheese, bacon, tomato, onion, and ranch dressing.</p>
-                  <p class="price">R89</p>
-                  <div class="buy-button">Buy Sub</div>
-                </div>
-              </div>
-              <div class="col-4">
-                <div class="sub-card">
-                  <img src="/assets/farmhouse - img.jpg" width="295">
-                  <h4 class="sub-name">The Farmhouse</h4>
-                  <p class="sub-details">Whole wheat bread with turkey, cheddar cheese, bacon, tomato, onion, and ranch dressing.</p>
-                  <p class="price">R89</p>
-                  <div class="buy-button">Buy Sub</div>
-                </div>
-              </div>
-              <div class="col-4">
-                <div class="sub-card">
-                  <img src="/assets/farmhouse - img.jpg" width="295">
-                  <h4 class="sub-name">The Farmhouse</h4>
-                  <p class="sub-details">Whole wheat bread with turkey, cheddar cheese, bacon, tomato, onion, and ranch dressing.</p>
-                  <p class="price">R89</p>
-                  <div class="buy-button">Buy Sub</div>
-                </div>
-              </div>
-              <div class="col-4">
-                <div class="sub-card">
-                  <img src="/assets/farmhouse - img.jpg" width="295">
-                  <h4 class="sub-name">The Farmhouse</h4>
-                  <p class="sub-details">Whole wheat bread with turkey, cheddar cheese, bacon, tomato, onion, and ranch dressing.</p>
-                  <p class="price">R89</p>
-                  <div class="buy-button">Buy Sub</div>
-                </div>
-              </div>
-              <div class="col-4">
-                <div class="sub-card">
-                  <img src="/assets/farmhouse - img.jpg" width="295">
-                  <h4 class="sub-name">The Farmhouse</h4>
-                  <p class="sub-details">Whole wheat bread with turkey, cheddar cheese, bacon, tomato, onion, and ranch dressing.</p>
-                  <p class="price">R89</p>
-                  <div class="buy-button">Buy Sub</div>
-                </div>
-              </div>
-              <div class="col-4">
-                <div class="sub-card">
-                  <img src="/assets/farmhouse - img.jpg" width="295">
-                  <h4 class="sub-name">The Farmhouse</h4>
-                  <p class="sub-details">Whole wheat bread with turkey, cheddar cheese, bacon, tomato, onion, and ranch dressing.</p>
-                  <p class="price">R89</p>
-                  <div class="buy-button">Buy Sub</div>
-                </div>
-              </div>
-              <div class="col-4">
-                <div class="sub-card">
-                  <img src="/assets/farmhouse - img.jpg" width="295">
-                  <h4 class="sub-name">The Farmhouse</h4>
-                  <p class="sub-details">Whole wheat bread with turkey, cheddar cheese, bacon, tomato, onion, and ranch dressing.</p>
-                  <p class="price">R89</p>
-                  <div class="buy-button">Buy Sub</div>
-                </div>
-              </div>
-              <div class="col-4">
-                <div class="sub-card">
-                  <img src="/assets/farmhouse - img.jpg" width="295">
-                  <h4 class="sub-name">The Farmhouse</h4>
-                  <p class="sub-details">Whole wheat bread with turkey, cheddar cheese, bacon, tomato, onion, and ranch dressing.</p>
-                  <p class="price">R89</p>
-                  <div class="buy-button">Buy Sub</div>
-                </div>
-              </div>
+            <div class="row" id="subsOfMonth">
+             
             </div>
             </div>
         </div>

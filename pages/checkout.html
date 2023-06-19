@@ -21,13 +21,15 @@
      <!-- Internal CSS -->
      <link rel="stylesheet" href="/css/main.css">
      <link rel="stylesheet" href="/css/build-sub.css">
+     <link rel="stylesheet" href="/css/checkout.css">
 
     <script src="/js/data.js"></script>
     <script src="/js/BuildASub.js"></script>
+    <script src="/js/checkout.js"></script>
     
     <title>SuperSubs: Build A Sub</title>
   </head>
-  <body class="dark-bg" onload="addToppingOptions(), addSauceOptions(), addDrinkOptions()">
+  <body class="dark-bg" onload="displayCheck()">
 
     <!--Navigation Bar-->
     
@@ -64,104 +66,39 @@
     </div>
       
 
-    <!--Heading-->
-
+    <!--Checkout-->
     
-
-    <div class="container-fluid hero-con">
-        <div class="row hero-section">
-          <div class="col-12 z-index">
-            <div class="mini-hero">
-              <h1 class="hero-text" >Create a <span class="cursive">Delicious</span>  Sub Sandwich</h1>
-              
-            </div>
-          </div>
-         
-        </div>
-    </div>
-
-
-    <!--Build Sub-->
-    <div class="current-cost"></div>
-    <div class="form-wrap">
-      <div class="order-total-wrapper ">
-        <div class="global-con order-total">
-          <p id="subTotal" ><strong>Sub Total:</strong> R0.00</p>
-          <button type="button" class="btn btn-secondary" id="addToCart" onclick="addToCart()">Proceed to Checkout</button>  
-        </div>
-        
-      </div>
-      <div class="global-con">
-        
-        
-        <form id="subForm" class="container-fluid" onchange="currentOrderCost()">
-            <div class="row form-element">
-                <h2 class="heading-1"> Name Your Sub</h2>
-                <input type="text" class="form-control" placeholder="Name Your Sub" id="subName">
-               
-            </div>
-
-            <div class="row form-element">
-                <h2 class="heading-1"> Choose A Bread</h2>
-                <select class="form-control" id="bread">
-                    <option>Select bread</option>
-                    <option>Italian bread - R20.00</option>
-                    <option>whole wheat bread - R25.00</option>
-                    <option>honey oat bread - R30.00</option>
-                    <option>Jalapeno cheese bread - R35.00</option>
-                    <option>Gluten free bread - R40.00</option>
-                </select>
-            </div>
-
-            <div class="row form-element">
-              <h2 class="heading-1">Topping Options</h2>
-              <p class="subheading">Please select a <strong>minimum</strong> of 5 toppings</p>
-              
-              <div class="toppings" id="toppingArea">
+    <div class="checkout-spread">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-8">
+                    <h1>Your Order</h1>
+                    <div id="checkoutOrder">
+                        
+                    </div>
+                </div>
+                <div class="col-4 order-total-display">
+                    <div class="order-display-wrapper">
+                        <h1>Your Total</h1>
+                        <h2 id="totalOut" class="total">R0.00</h2>
+                        <div class="promo-wrap">
+                            <h3>Enter a Promo Code</h3>
+                            <input type="text" class="form-control promo-input" placeholder="Discount30%" id="promo">
+                            <button class="btn btn-primary" type="button" onclick="calculatePromo()">Add Discount</button>  
                 
-              </div>
-            </div>
-
-            <div class="row form-element">
-              <h2 class="heading-1">Add a sauce</h2>
-              <p class="subheading">Please choose a <strong>minimum</strong> of 1 sauce</p>
-              <div class="toppings" id="sauceArea">
+                        </div>
+                        
+                        <button class="btn btn-primary" type="button" onclick="resetReturn()">Make Payment</button>  
                 
+                    </div>
+                    
                 </div>
             </div>
+        </div>
 
-            <div class="row form-element">
-              <h2 class="heading-1">Pick a drink</h2>
-              <p class="subheading">Choose the beverage of your choice!</p>
-              <div class="toppings" id="drinkArea">
-                
-              </div>
-            </div>
-
-        </form>
-
-
-    <!--Display Subs-->
+    </div>
 
     
-    <div class="subtotal-heading">
-      <p id="currentOrderCost"><strong>Order Total:</strong>  R0.00</p>
-      <button type="button" class="btn btn-secondary" id="addToCart" onclick="makeSub(), displayOrder()" >Add Sub</button>
-    </div>
-
-    <div class="line"></div>
-
-    <h2 >Your Orders</h2>
-
-    <div class="container-fluid orders-wrapper">
-      <div class="row" id="orders">
-        
-        
-      </div>
-    </div>
-
-    </div>
-    </div>
 
   </body>
 </html>

@@ -144,12 +144,21 @@ makeSub = () => {
     document.getElementById("currentOrderCost").innerHTML = `<strong>Order Total:</strong> R0.00`;
 }
 
+}
 
-  console.log(subOrder);
+addToCart = () => {
 
+  if(subOrder.length === 0){
+    alert("Please create your sub and add it to your order!")
+  } else {
+  let data = JSON.stringify(subOrder);
+  localStorage.setItem('order', data);
+  window.location.href = 'checkout.html';
+  }
   
 
 }
+
 
 displayOrder = () => {
 
@@ -240,3 +249,4 @@ currentOrderCost = () => {
   document.getElementById("currentOrderCost").innerHTML = `<strong>Order Total:</strong> R${currentOrderPrice}.00`;
 
 }
+
