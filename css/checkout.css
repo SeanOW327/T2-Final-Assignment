@@ -73,3 +73,13 @@
     margin-top: 10px;
     margin-bottom: 30px;
 }
+
+.promo-button{
+    color: #F7B12E;
+    font-weight: 700;
+}
+
+.promo-button:hover{
+    color: white;
+    cursor: pointer;
+}
